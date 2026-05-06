@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PORTFOLIO FILE — Soumya Deopa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:wght@400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress"><div class="scroll-progress-bar"></div></div>
+
+  <!-- ════════════════════════════════════════
+       BOOT / TYPEWRITER SCREEN
+  ════════════════════════════════════════ -->
+  <div id="boot">
+    <div class="terminal">
+      <div id="lines"></div>
+      <div class="prompt-line">
+      <span class="prompt-symbol">></span>
+      <span class="cursor" id="cursor"></span>
+      </div>
+      <button id="skip-btn" onclick="skipBoot()">SKIP ▶</button>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       MAIN SITE
+  ════════════════════════════════════════ -->
+  <div id="main">
+
+    <!-- Ambient orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <!-- ── NAV ── -->
+    <nav>
+      <div class="nav-logo">OPERATIVE DATABASE</div>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ══════════════════════════════
+         HERO
+    ══════════════════════════════ -->
+    <section class="hero">
+
+      <!-- Left: Dossier Info -->
+      <div class="hero-left appear appear-up">
+        <div class="case-tag">Portfolio File #2024-77B — Active</div>
+        <h1 class="name">
+          <span class="first">SOUMYA</span>
+          <span class="last">DEOPA</span>
+        </h1>
+        <p class="tagline">1st Year · Design Student</p>
+
+        <div class="dossier-fields">
+          <div class="field">
+            <span class="field-label">Status</span>
+            <span class="field-value green">AVAILABLE FOR HIRE</span>
+          </div>
+          <div class="field">
+            <span class="field-label">Clearance</span>
+            <span class="field-value">LEVEL 2 — INTERMEDIATE</span>
+          </div>
+          <div class="field">
+            <span class="field-label">Student</span>
+            <span class="field-value">DIT University</span>
+          </div>
+          <div class="field">
+            <span class="field-label">Base</span>
+            <span class="field-value">Dehradun, India</span>
+          </div>
+          <div class="field">
+            <span class="field-label">Contact</span>
+            <span class="field-value green">ENCRYPTED CHANNEL</span>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Open Contact</a>
+        </div>
+      </div>
+
+      <!-- Right: Polaroid Photo -->
+      <div class="hero-right">
+        <div class="polaroid-wrap appear appear-right">
+          <div class="pin"></div>
+          <div class="polaroid">
+            <div class="stamp">SUBJECT</div>
+            <div class="polaroid-img-wrap">
+              <!-- Illustrated suspect portrait (SVG) -->
+               <img src="sh.png">
+                <defs>
+                  <radialGradient id="bg" cx="50%" cy="40%">
+                    <stop offset="0%" stop-color="#3a2a18"/>
+                    <stop offset="100%" stop-color="#0e0906"/>
+                  </radialGradient>
+                  <radialGradient id="skin" cx="50%" cy="40%">
+                    <stop offset="0%" stop-color="#c8956a"/>
+                    <stop offset="100%" stop-color="#9a6840"/>
+                  </radialGradient>
+                </defs>
+                <!-- Background -->
+                <rect width="320" height="320" fill="url(#bg)"/>
+                <rect x="0" y="0" width="320" height="220" fill="#1a1208" opacity="0.6"/>
+                <!-- Floor shadow -->
+                <ellipse cx="160" cy="295" rx="90" ry="18" fill="#050302" opacity="0.8"/>
+               >
+              </svg>
+            </div><!-- /.polaroid-img-wrap -->
+            <div class="polaroid-caption"><span>S. DEOPA — SUSPECT PHOTO 4C</span></div>
+          </div><!-- /.polaroid -->
+          <div class="sticky">
+            "Available<br>for new<br>missions —<br><em>contact now</em>"
+          </div>
+        </div><!-- /.polaroid-wrap -->
+      </div><!-- /.hero-right -->
+
+    </section><!-- /.hero -->
+
+    <!-- ══════════════════════════════
+         PROJECTS SECTION
+    ══════════════════════════════ -->
+    <section id="projects">
+      <div class="section-header appear appear-up">
+        <span class="section-num">01</span>
+        <h2 class="section-title">Projects Filed</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="evidence-grid">
+        <div class="evidence-card appear appear-zoom" data-num="01" data-project="casetrack" data-delay="0" role="button" tabindex="0">
+          <span class="evidence-icon">🎞️</span>
+          <h3>Visualizing  tools and storytelling</h3>
+          <p>Visualizing tools are techniques and mediums used to represent ideas, data, or concepts visually so they are easier to understand.</p>
+          <span class="card-open-hint">OPEN FILE ▶</span>
+        </div>
+        <div class="evidence-card appear appear-zoom" data-num="02" data-project="signal" data-delay="100" role="button" tabindex="0">
+          <span class="evidence-icon">📱</span>
+          <h3>Elements of Design</h3>
+          <p>The elements of design are the basic building blocks used to create any visual composition. Every design—whether a poster, website, or logo—is made using these core elements.</p>
+          <span class="card-open-hint">OPEN FILE ▶</span>
+        </div>
+        <div class="evidence-card appear appear-zoom" data-num="03" data-project="archive" data-delay="200" role="button" tabindex="0">
+          <span class="evidence-icon">✏️</span>
+          <h3>Sketching</h3>
+          <p>Sketching is the quick and freehand drawing of ideas, objects, or concepts. It is not about perfection—it’s about thinking visually and capturing ideas fast.</p>
+          <span class="card-open-hint">OPEN FILE ▶</span>
+        </div>
+        <div class="evidence-card appear appear-zoom" data-num="04" data-project="pattern" data-delay="300" role="button" tabindex="0">
+          <span class="evidence-icon">🆎</span>
+          <h3>Typography</h3>
+          <p>Typography is the art and technique of arranging text to make it readable, visually appealing, and meaningful. It’s not just about choosing a font—it’s about how text looks, feels, and communicates.</p>
+        
+          <span class="card-open-hint">OPEN FILE ▶</span>
+        </div>
+        <div class="evidence-card appear appear-zoom" data-num="05" data-project="securecomm" data-delay="400" role="button" tabindex="0">
+          <span class="evidence-icon">🤝</span>
+          <h3>Empathy in Design</h3>
+          <p>Empathy in design means understanding the user’s feelings, needs, and experiences before creating a solution. It’s about seeing the problem from the user’s perspective, not just your own.</p>
+          <span class="card-open-hint">OPEN FILE ▶</span>
+        </div>
+        <div class="evidence-card appear appear-zoom" data-num="06" data-project="finale" data-delay="500" role="button" tabindex="0">
+          <span class="evidence-icon">🚀</span>
+          <h3>Digital Design Tools</h3>
+          <p>Digital design tools are software applications used to create visuals, interfaces, graphics, and interactive experiences. They’re essential for UI/UX design, graphic design, branding, and web development.</p>
+          <span class="card-open-hint">OPEN FILE ▶</span>
+        </div>
+        <div class="evidence-card appear appear-zoom" data-num="07" data-project="basicsux" data-delay="600" role="button" tabindex="0">
+          <span class="evidence-icon">🎯</span>
+          <h3>Basics of UX and 6D</h3>
+          <p>User Experience (UX) is about how a person feels when interacting with a product—a website, app, or system. Good UX makes things easy, useful, and enjoyable.</p>
+          <span class="card-open-hint">OPEN FILE ▶</span>
+        </div>
+        <div class="evidence-card appear appear-zoom" data-num="08" data-project="sixd" data-delay="700" role="button" tabindex="0">
+          <span class="evidence-icon">🔮</span>
+          <h3>Fundamentals of User Research</h3>
+          <p>User research is the foundation of UX—it helps you understand real users, their needs, behaviors, and problems before designing anything. Without it, you’re just guessing.</p>
+          <span class="card-open-hint">OPEN FILE ▶</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         SKILLS SECTION
+    ══════════════════════════════ -->
+    <section id="skills">
+      <div class="section-header appear appear-up">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Operative Skills</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item appear appear-left" data-delay="0">
+          <div class="timeline-date">Clearance Level — Intermediate</div>
+          <div class="timeline-title">Photoshop</div>
+          <div class="timeline-desc">Proficient in Adobe Photoshop for image editing, compositing, and visual design.</div>
+          <span class="timeline-badge">Adobe · Photoshop · Design</span>
+        </div>
+        <div class="timeline-item appear appear-left" data-delay="100">
+          <div class="timeline-date">Clearance Level — Beginner</div>
+          <div class="timeline-title">Illustrator</div>
+          <div class="timeline-desc">Proficient in Adobe Illustrator for vector illustration, logo design.</div>
+          <span class="timeline-badge">Adobe · Illustrator · Design</span>
+        </div>
+        <div class="timeline-item appear appear-left" data-delay="200">
+          <div class="timeline-date">Clearance Level — Proficient</div>
+          <div class="timeline-title">Figma</div>
+          <div class="timeline-desc">Skilled in Figma with experience in wireframing, UI design, prototyping, and building consistent design systems.</div>
+          <span class="timeline-badge">Wireframe · Thinking · Design</span>
+        </div>
+        <div class="timeline-item appear appear-left" data-delay="300">
+          <div class="timeline-date">Clearance Level — Active</div>
+          <div class="timeline-title">Security &amp; Systems</div>
+          <div class="timeline-desc">Poficient knowledge in HTML, CSS, JavaScript.</div>
+          <span class="timeline-badge timeline-badge--red">Ongoing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         CONTACT SECTION
+    ══════════════════════════════ -->
+    <section id="contact" class="contact-section">
+      <h2 class="appear appear-up">Reach the Operative</h2>
+      <p class="appear appear-up">All transmissions are encrypted end-to-end. Access is restricted to verified contacts only. If you have a project, collaboration, or mission in mind — open a channel.</p>
+      <div class="contact-links appear appear-up">
+        <a href="https://mail.google.com/mail/u/0/#inbox" class="contact-link">Email</a>
+        <a href="https://github.com/insane3159o-cmd" class="contact-link">GitHub</a>
+        <a href="https://www.linkedin.com/feed/" class="contact-link">LinkedIn</a>
+        <a href="#" class="contact-link">Resume</a>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         BOTTOM EVIDENCE TICKER
+    ══════════════════════════════ -->
+    <div class="ticker-wrap">
+      <div class="ticker-label">OPERATIVE LOG</div>
+      <div class="ticker-overflow">
+        <div class="ticker-track">
+          <span class="ticker-item">PORTFOLIO #2024-77B — <span>ACTIVE</span></span>
+          <span class="ticker-item">PROJECTS ON FILE: <span>8 CONFIRMED DEPLOYMENTS</span></span>
+          <span class="ticker-item">CURRENT STATUS: <span>OPEN TO OPPORTUNITIES</span></span>
+          <span class="ticker-item">SPECIALITY: <span>DESIGN STUDENT</span></span>
+          <span class="ticker-item">SKILL CLEARANCE: <span>LEVEL 2 — INTERMEDIATE</span></span>
+          <span class="ticker-item">CODENAME: <span>S. DEOPA</span></span>
+          <span class="ticker-item">AVAILABILITY: <span>IMMEDIATE</span></span>
+          <!-- Duplicate for seamless loop -->
+          <span class="ticker-item">PORTFOLIO #2024-77B — <span>ACTIVE</span></span>
+          <span class="ticker-item">PROJECTS ON FILE: <span>8 CONFIRMED DEPLOYMENTS</span></span>
+          <span class="ticker-item">CURRENT STATUS: <span>OPEN TO OPPORTUNITIES</span></span>
+          <span class="ticker-item">SPECIALITY: <span>DESIGN STUDENT</span></span>
+          <span class="ticker-item">SKILL CLEARANCE: <span>LEVEL 2 — INTERMEDIATE</span></span>
+          <span class="ticker-item">CODENAME: <span>S. DEOPA</span></span>
+          <span class="ticker-item">AVAILABILITY: <span>IMMEDIATE</span></span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /#main -->
+
+  <!-- ════════════════════════════════════════
+       PROJECT MODAL / CASE FILE OVERLAY
+  ════════════════════════════════════════ -->
+  <div id="project-modal" aria-modal="true" role="dialog" aria-label="Project case file">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-panel">
+      <div class="modal-tape modal-tape--tl"></div>
+      <div class="modal-tape modal-tape--tr"></div>
+      <div class="modal-header">
+        <span class="modal-file-id" id="modal-file-id">FILE #00</span>
+        <span class="modal-status" id="modal-status">ACTIVE</span>
+        <button class="modal-close" id="modal-close" aria-label="Close">✕ CLOSE FILE</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-img-wrap">
+          <div class="modal-img-inner" id="modal-img"></div>
+          <div class="modal-img-label" id="modal-img-label">EXHIBIT A</div>
+        </div>
+        <div class="modal-info">
+          <div class="modal-case-tag" id="modal-case-tag">CASE REPORT</div>
+          <h2 class="modal-title" id="modal-title">Project Name</h2>
+          <p class="modal-tagline" id="modal-tagline">Stack · Tools · Platform</p>
+          <div class="modal-divider"></div>
+          <div class="modal-section-label">OVERVIEW</div>
+          <p class="modal-overview" id="modal-overview"></p>
+          <div class="modal-section-label" style="margin-top:1.4rem;">KEY FEATURES</div>
+          <ul class="modal-features" id="modal-features"></ul>
+          <div class="modal-meta" id="modal-meta"></div>
+        </div>
+      </div>
+      <div class="modal-scanlines"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
